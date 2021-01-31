@@ -3,7 +3,7 @@
     margin: 0;
     box-sizing: border-box;
     text-decoration: none;
-     outline: none;
+    outline: none;
 }
 
 body {
@@ -94,7 +94,7 @@ span {
     }
 }
 
-@media screen and (max-width: 520px) {
+@media screen and (max-width:520px) {
     #keys {
         flex-wrap: wrap;
     }
@@ -112,6 +112,32 @@ span {
 
     .text {
         font-size: 5px;
+    }
+
+    .play {
+        border-color: #ffc800;
+        box-shadow: 0 0 0.5rem #e100ff;
+    }
+}
+
+@media screen and (max-width: 350px) {
+    #keys {
+        flex-wrap: wrap;
+    }
+
+    .key {
+        margin-left: 0.1rem;
+        padding: 0.1rem 0.4rem;
+        font-size: 0.3rem;
+        border-radius: 0.2rem;
+        text-shadow: rgba(0, 0, 0, 0.89) .05rem .05rem .05rem;
+        border: rgba(0, 0, 0, 0.575) solid 0.1rem;
+        color: white;
+        width: 1rem;
+    }
+
+    .text {
+        font-size: 3px;
     }
 
     .play {
