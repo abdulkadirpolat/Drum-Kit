@@ -1,0 +1,119 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background: url(img/drum\ kit.jpg) no-repeat center center fixed;
+    background-size: cover;
+    font-family: sans-serif;
+}
+
+#keys {
+    display: flex;
+    min-height: 100vh;
+    justify-content: center;
+    align-items: center;
+}
+
+.key {
+    transition: all .1s ease-out;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin-left: 1rem;
+    background: none;
+    background-color: rgba(0, 0, 0, 0.459);
+    padding: 0.7rem 1.4rem;
+    font-size: 1.2rem;
+    color: white;
+    width: 5.5rem;
+    overflow: hidden;
+    border-radius: 0.5rem;
+    text-shadow: rgba(0, 0, 0, 0.89) .1rem .1rem .1rem;
+    border: rgba(0, 0, 0, 0.575) solid .2rem;
+}
+
+span {
+
+    font-size: 0.6rem;
+    color: rgb(230, 216, 95);
+
+}
+
+.play {
+    transform: scale(1.15);
+    border-color: #ffc800;
+    box-shadow: 0 0 1rem #ff5e00;
+}
+
+@media screen and (max-width: 992px) {
+    .key {
+        margin-left: 0.7rem;
+        padding: 0.7rem 2rem;
+        font-size: 0.9rem;
+        text-shadow: rgba(0, 0, 0, 0.89) .08rem .08rem .08rem;
+        border: rgba(0, 0, 0, 0.575) solid 0.17rem;
+        color: white;
+        width: 4rem;
+    }
+
+    .text {
+        font-size: 0.5rem;
+    }
+
+    .play {
+        border-color: #ffc800;
+        box-shadow: 0 0 0.8rem #ffbb00;
+    }
+}
+
+@media screen and (max-width: 758px) {
+    .key {
+        margin-left: 0.5rem;
+        padding: 0.5rem 1rem;
+        font-size: 0.7rem;
+        text-shadow: rgba(0, 0, 0, 0.89) .07rem .07rem .07rem;
+        border: rgba(0, 0, 0, 0.575) solid 0.14rem;
+        color: white;
+        width: 3rem;
+    }
+
+    .text {
+        font-size: 0.4rem;
+    }
+
+    .play {
+
+        border-color: #ffc800;
+        box-shadow: 0 0 0.7rem #d9ff00;
+    }
+}
+
+@media screen and (max-width: 520px) {
+    #keys {
+        flex-wrap: wrap;
+    }
+
+    .key {
+        margin-left: 0.25rem;
+        padding: 0.4rem 0.5rem;
+        font-size: 0.55rem;
+        border-radius: 0.3rem;
+        text-shadow: rgba(0, 0, 0, 0.89) .05rem .05rem .05rem;
+        border: rgba(0, 0, 0, 0.575) solid 0.1rem;
+        color: white;
+        width: 2.4rem;
+    }
+
+    .text {
+        font-size: .2rem;
+    }
+
+    .play {
+        border-color: #ffc800;
+        box-shadow: 0 0 0.5rem #e100ff;
+    }
+}

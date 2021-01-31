@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Drum Kit</title>
+
+    <link rel="stylesheet" href="app.css" />
+    <link rel="shortcut icon" href="#" />
+  </head>
+  <body>
+    <div id="keys">
+      <div class="key" data-key="65">A<span class="text">CLAP</span></div>
+      <div class="key" data-key="83">S<span class="text">HIHAP</span></div>
+      <div class="key" data-key="68">D<span class="text">KICK</span></div>
+      <div class="key" data-key="70">F<span class="text">CRASH</span></div>
+      <div class="key" data-key="71">G<span class="text">BOOM</span></div>
+      <div class="key" data-key="72">H<span class="text">PANG</span></div>
+      <div class="key" data-key="74">J<span class="text">SNARE</span></div>
+      <div class="key" data-key="75">K<span class="text">TOM</span></div>
+      <div class="key" data-key="76">L<span class="text">COWBELL</span></div>
+    </div>
+    <audio data-key="65" src="sounds/Clap.wav"></audio>
+    <audio data-key="83" src="sounds/Hihat.wav"></audio>
+    <audio data-key="68" src="sounds/Kick.wav"></audio>
+    <audio data-key="70" src="sounds/Crash.wav"></audio>
+    <audio data-key="71" src="sounds/Boom.wav"></audio>
+    <audio data-key="72" src="sounds/Pang.wav"></audio>
+    <audio data-key="74" src="sounds/Snare.wav"></audio>
+    <audio data-key="75" src="sounds/Tom.wav"></audio>
+    <audio data-key="76" src="sounds/Cowbell.wav"></audio>
+    <script src="main.js"></script>
+  </body>
+</html>
