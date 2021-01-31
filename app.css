@@ -101,17 +101,17 @@ span {
 
     .key {
         margin-left: 0.25rem;
-        padding: 0.4rem 0.5rem;
+        padding: 0.3rem 0.45rem;
         font-size: 0.55rem;
         border-radius: 0.3rem;
         text-shadow: rgba(0, 0, 0, 0.89) .05rem .05rem .05rem;
         border: rgba(0, 0, 0, 0.575) solid 0.1rem;
         color: white;
-        width: 2.4rem;
+        width: 1.8rem;
     }
 
     .text {
-        font-size: .2rem;
+        font-size: 5px;
     }
 
     .play {
